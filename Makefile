@@ -1,5 +1,5 @@
 run:
-	poetry run python manage.py runserver 8090
+	poetry run python manage.py runserver
 db:
 	poetry run python manage.py makemigrations
 	poetry run python manage.py migrate
