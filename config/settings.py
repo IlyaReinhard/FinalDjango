@@ -42,7 +42,9 @@ INSTALLED_APPS = [
     #apps
     'apps.api.apps.ApiConfig',
     #3rd party
-    'rest_framework'
+    'rest_framework',
+    #apps
+    'apps.api.apps.ApiConfig'
 ]
 
 MIDDLEWARE = [

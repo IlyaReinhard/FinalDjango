@@ -10,6 +10,3 @@ set-admin:
 	poetry run python manage.py createsuperuser
 test:
 	poetry run python manage.py test
-
-
-
