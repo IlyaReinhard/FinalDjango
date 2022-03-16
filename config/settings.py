@@ -12,8 +12,11 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+import django_heroku
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
@@ -43,8 +46,7 @@ INSTALLED_APPS = [
     'apps.api.apps.ApiConfig',
     #3rd party
     'rest_framework',
-    #apps
-    'apps.api.apps.ApiConfig'
+
 ]
 
 MIDDLEWARE = [
@@ -130,3 +132,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+django_heroku.settings(locals())
